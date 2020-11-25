@@ -1,6 +1,6 @@
 # G-Lab
 
-MERN Stack based E-commerce Site (MongoDB,ExpressJS,ReactJS,NodeJS)
+### MERN Stack based E-commerce Site (MongoDB,ExpressJS,ReactJS,NodeJS)
 
 # Getting Started with Create React App
 
