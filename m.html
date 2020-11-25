@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Product.css" />
+		<link rel="stylesheet" href="./src/App.css" />
+		<title>Document</title>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="section-fluid-main">
+			<div class="section">
+				<div class="new__tech-card">
+					<img class="imgtech" src="/g-lab//public/apple-iphone-12-pro-max-1.png" alt="" />
+				</div>
+				<div class="info1">
+					<div class="info-wrap mob-margin">
+						<p class="title-up">Smartphone</p>
+						<h2>Apple Iphone 12 Pro Max</h2>
+						<h4>$174 <span>$237</span></h4>
+						<div class="section-fluid">
+							<input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked />
+							<label for="desc-1">Description</label>
+							<input class="desc-btn" type="radio" id="desc-2" name="desc-btn" />
+							<label for="desc-2">Specifications</label>
+							<div class="section-fluid desc-sec accor-1">
+								<p>It is the biggest, heaviest, most powerful, and most feature-rich iPhone Apple.</p>
+							</div>
+							<div class="section-fluid desc-sec accor-2">
+								<div class="section-inline">
+									<p><span>128</span>GB<br />Storage</p>
+								</div>
+								<div class="section-inline">
+									<p><span>6</span>GB<br />RAM</p>
+								</div>
+								<div class="section-inline">
+									<p><span>12.2 </span>MP<br />Main Camera</p>
+								</div>
+								<div class="section-inline">
+									<p><span>8</span>MP<br />Front Camera</p>
+								</div>
+							</div>
+						</div>
+						<h5>Choose Color:</h5>
+						<div class="color-choose">
+							<div>
+								<input data-image="red" type="radio" id="red" name="color" value="red" checked />
+								<label for="red"><span></span></label>
+							</div>
+							<div>
+								<input data-image="blue" type="radio" id="blue" name="color" value="blue" />
+								<label for="blue"><span></span></label>
+							</div>
+							<div>
+								<input data-image="black" type="radio" id="black" name="color" value="black" />
+								<label for="black"><span></span></label>
+							</div>
+						</div>
+						<h5>Quantity:</h5>
+						<div class="box">
+							<input type="number" value="1" />
+						</div>
+						<div class="clearfix"></div>
+						<div class="info-wrap">
+							<a href="#" class="btn"><i class="uil uil-shopping-cart icon"></i> Add To Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./jquery.nice-number.js"></script>
+	<script text="javascript">
+		$(function () {
+			$('input[type="number"]').niceNumber();
+		});
+	</script>
+</html>
