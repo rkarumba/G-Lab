@@ -7,7 +7,7 @@ import Shop from './pages/Shop';
 import ScrollToTop from './components/ScrollToTop';
 import ChangeHeader from './components/ChangeHeader';
 import SideMenu from './components/SideMenu';
-import Product from './components/Product';
+import Iphone11ProMax from './components/Iphone11ProMax';
 
 function App() {
 	return (
@@ -21,7 +21,7 @@ function App() {
 			<Switch>
 				<Route path="/" exact component={Homepage} />
 				<Route path="/Shop.js" component={Shop} />
-				<Route path="/Product.js" component={Product} />
+				<Route path="/Iphone11ProMax.js" component={Iphone11ProMax} />
 			</Switch>
 
 			{/* Footer */}

@@ -2,21 +2,30 @@ import React from 'react';
 import './Product.css';
 import { HiShoppingCart } from 'react-icons/hi';
 
-function Product() {
-	
+function Product({
+	ProductImage,
+	ProductName,
+	ProductPrice,
+	ProductOldPrice,
+	ProductDescription,
+	ProductStorageNumber,
+	ProductMemoryNumber,
+	ProductMainCameraSpecs,
+	ProductFrontCameraSpecs,
+}) {
 	return (
 		<div>
 			<div className="section-fluid-main">
 				<div className="section1">
 					<div className="new__tech-card">
-						<img className="imgtech" src="/apple-iphone-12-pro-max-1.png" alt="" />
+						<img className="imgtech" src={ProductImage} alt="ProductImage" />
 					</div>
 					<div className="info1">
 						<div className="info-wrap mob-margin">
 							<p className="title-up">Smartphone</p>
-							<h2>Apple Iphone 12 Pro Max</h2>
+							<h2>{ProductName}</h2>
 							<h4>
-								$174 <span>$237</span>
+								{ProductPrice} <span>{ProductOldPrice}</span>
 							</h4>
 							<div className="section-fluid">
 								<input className="desc-btn" type="radio" id="desc-1" name="desc-btn" defaultChecked />
@@ -24,35 +33,33 @@ function Product() {
 								<input className="desc-btn" type="radio" id="desc-2" name="desc-btn" />
 								<label htmlFor="desc-2">Specifications</label>
 								<div className="section-fluid desc-sec accor-1">
-									<p>
-										It is the biggest, heaviest, most powerful, and most feature-rich iPhone Apple.
-									</p>
+									<p>{ProductDescription}</p>
 								</div>
 								<div className="section-fluid desc-sec accor-2">
 									<div className="section-inline">
 										<p>
-											<span>128</span>GB
+											<span>{ProductStorageNumber}</span>GB
 											<br />
 											Storage
 										</p>
 									</div>
 									<div className="section-inline">
 										<p>
-											<span>6</span>GB
+											<span>{ProductMemoryNumber}</span>GB
 											<br />
 											RAM
 										</p>
 									</div>
 									<div className="section-inline">
 										<p>
-											<span>12.2 </span>MP
+											<span>{ProductMainCameraSpecs}</span>MP
 											<br />
 											Main Camera
 										</p>
 									</div>
 									<div className="section-inline">
 										<p>
-											<span>8</span>MP
+											<span>{ProductFrontCameraSpecs}</span>MP
 											<br />
 											Front Camera
 										</p>

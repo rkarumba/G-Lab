@@ -11,7 +11,7 @@ function featured() {
 				<div className="featured__container bd-grid">
 					<article className="tech">
 						<div className="tech__sale">SALE</div>
-						<Link to="/Product.js">
+						<Link to="./Iphone11ProMax.js">
 							<img src="apple-iphone-12-pro-max-1.png" alt="" className="tech__img" />
 						</Link>
 						<span className="tech__name">Apple Iphone 11 Pro Max.</span>
